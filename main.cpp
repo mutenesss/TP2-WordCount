@@ -77,8 +77,8 @@ void remove_stop_words(){
     /*
     Tudo que tem dessa parte pra baixo eu nao tenho garantia
     que ajuda, mas existe.
-    A parte ate o indexes.sort eu garanto que funciona, mas a remocao
-    de dados abaixo nao funciona.
+    A comparacao dentro do for esta com problema, pois ela esta
+    encontrando apenas valores que se repetem nas stop_words
 
     anterior a remocao, eh pra lista words ter tamanho 148 e
     a lista data ter tamanho 0
