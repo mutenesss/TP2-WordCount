@@ -100,12 +100,6 @@ void sort_words(){
     });
 }
 
-void print_freq(){
-    for(int i = 0; i < 25 and i < vec.size(); i++){
-        cout << i+1 << "º " << vec[i].first << " - " << vec[i].second << endl;
-    }
-}
-
 int main(){
     read_file("frankenstein.txt");       
     filter_and_normalize();         
@@ -117,6 +111,8 @@ int main(){
     scan();
     remove_stop_words();
     sort_words();
-    print_freq();
+    for(int i = 0; i < 25 and i < vec.size(); i++){
+        cout << i+1 << "º " << vec[i].first << " - " << vec[i].second << endl;
+    }
     return 0;
 }
